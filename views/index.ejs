@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>TorMemo - Create</title>
+</head>
+<body>
+
+    <header>
+        <a href="/" class="logo"></a>
+        <h1>TorMemo</h1>
+        <h3>Your text can only be shown once. The data will be stored encrypted.</h3>
+    </header>
+
+    <main>
+
+        <% if(message){ %>
+
+        <div class="message<%= success === false ? ' error' : ''; %>">
+            <i class="ti"><%= success === false ? '' : ''; %></i><%- message %>
+        </div>
+    
+        <% } %>
+
+        <div id="js_active_error" style="display: none;" class="message error">
+            <i class="ti"></i>You have not disabled JavaScript in your browser. For security it is recommended to do so.
+        </div>
+
+        <form action="" method="post">
+    
+            <label for="memo">Memo</label>
+            <textarea name="memo" maxlength="<%= maxMemoLength %>" rows="3" required autocomplete="off"></textarea>
+            <small>Your text will be stored encrypted. It is impossible to access your data without the password (even for us). The maximum length is <%= maxMemoLength %> characters.</small>
+    
+            <label for="password">Password</label>
+            <input type="text" name="password" required autocomplete="off">
+            <small>Your password will not be stored.</small>
+    
+            <center>
+                <button type="submit" class="btn">Create</button>
+            </center>
+        </form>
+
+    </main>
+
+    <script>
+        document.getElementById('js_active_error').style.display = 'block';
+    </script>
+
+</body>
+</html>

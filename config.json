@@ -1,0 +1,7 @@
+{
+    "hostname": "tormemo.onion",
+    "port": 80,
+    "storagePath": "./save/",
+    "expireAfter": 604800000,
+    "expireInterval": 3600000
+}

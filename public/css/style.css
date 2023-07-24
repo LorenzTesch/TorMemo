@@ -1,0 +1,167 @@
+@font-face {
+    font-family: 'SourceSansPro-Regular';
+    src: url('/fonts/SourceSansPro-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SourceSansPro-Light';
+    src: url('/fonts/SourceSansPro-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Tor Icons';
+    src: url('/fonts/tor-icons.woff2') format('woff2');
+}
+
+:root{
+    --color-purple: #7D4698;
+    --color-purple-dark: #59316B;
+
+    --color-red: #B03030;
+    --color-red-dark: #7d2222;
+    --color-green: #68B030;
+    --color-green-dark: #497d22;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.ti{
+    font-family: 'Tor Icons';
+    font-style: normal;
+    font-weight: normal;
+    padding-right: 10px;
+}
+
+.message{
+    width: 100%;
+    padding: 0 20px;
+    line-height: 50px;
+    background-color: var(--color-green);
+    border: 1px solid var(--color-green-dark);
+    border-radius: .25rem;
+    color: #fff;
+}
+
+.message + .message{
+    margin-top: 7px;
+}
+
+.message.error{
+    background-color: var(--color-red);
+    border: 1px solid var(--color-red-dark);
+}
+
+.btn{
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    user-select: none;
+    border: 1px solid rgba(0,0,0,0);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    color: #fff;
+    background-color: var(--color-purple);
+    margin-top: 24px;
+    width: 300px;
+}
+
+.btn:hover{
+    background-color: #673a7e;
+    border-color: #603675;
+}
+
+label{
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: .5rem;
+    margin-top: 16px;
+}
+
+input, textarea{
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-image: none;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    font-weight: 400;
+    font-family: inherit;
+}
+
+input:focus, textarea:focus{
+    border-color: #b991cc;
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(125,70,152,.25);
+}
+
+small{
+    color: #848e97;
+    display: block;
+    margin-top: .25rem;
+    font-size: 90%;
+    font-weight: 400;
+}
+
+body{
+    margin: 0;
+    font-family: 'SourceSansPro-Regular', sans-serif;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.logo{
+    position: absolute;
+    display: block;
+    padding: 30px;
+    top: 30px;
+    left: 30px;
+    width: 60px;
+    height: 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('/img/logo.svg');
+}
+
+header{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    background-color: var(--color-purple-dark);
+    color: #fff;
+
+    padding: 200px 0;
+}
+
+header h1{
+    font-family: 'SourceSansPro-Light', sans-serif;
+    font-size: 5.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 0;
+}
+
+header h3{
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 0;
+    padding-top: 20px;
+}
+
+main{
+    max-width: 1200px;
+    padding: 50px;
+    margin: 0 auto;
+}
