@@ -4,4 +4,4 @@ The data will be stored encrypted.
 
 It is written in NodeJS and Express.
 
-Example is currently running at [vg555a5dhxt3bq5tqrzrmhuyizwwsipuslbo363xrkv53w2wxfumxcqd.onion](vg555a5dhxt3bq5tqrzrmhuyizwwsipuslbo363xrkv53w2wxfumxcqd.onion)
+Example is currently running at [http://vg555a5dhxt3bq5tqrzrmhuyizwwsipuslbo363xrkv53w2wxfumxcqd.onion](http://vg555a5dhxt3bq5tqrzrmhuyizwwsipuslbo363xrkv53w2wxfumxcqd.onion)
