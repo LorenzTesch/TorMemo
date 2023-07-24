@@ -8,7 +8,9 @@ const express = require('express');
 const app = express();
 const helmet = require('helmet');
 
-app.use(helmet());
+app.use(helmet({
+    contentSecurityPolicy: false
+}));
 app.disable('x-powered-by');
 
 app.use(express.json())
